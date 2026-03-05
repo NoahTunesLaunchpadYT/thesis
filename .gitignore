@@ -1,0 +1,98 @@
+# LaTeX build artefacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.brf
+*.fls
+*.fdb_latexmk
+*.fmt
+*.fot
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.idx
+*.ilg
+*.ind
+*.ist
+*.loa
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.sbb
+*.snm
+*.synctex.gz
+*.synctex.gz(busy)
+*.toc
+*.vrb
+*.xdv
+*.xmpdata
+*.xmpi
+
+# Bibliography / biber / biblatex
+*-blx.bib
+
+# Glossaries / makeindex / nomencl
+*.nlg
+*.nlo
+*.nls
+*.acn
+*.acr
+*.alg
+
+# latexmk temp
+.latexmkrc
+latexmk.out
+latexmk/
+
+# Minted / pygments
+_minted*
+*.pyg
+*.pygtex
+
+# TikZ / pgfplots externalisation / gnuplot
+*.dpth
+*.md5
+*.gnuplot
+*.table
+*-converted-to.pdf
+
+# Figures: Inkscape exports (keep the .svg, ignore generated outputs)
+figures/*.pdf
+figures/*.pdf_tex
+figures/**/*.pdf
+figures/**/*.pdf_tex
+
+# If you use svg package (Inkscape / svg-inkscape)
+svg-inkscape/
+*.svg-inkscape
+
+# Output folders (adjust to your project)
+build/
+out/
+dist/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# JetBrains
+.idea/
+*.iml
+
+# Misc
+*.bak
+*.swp
+*.swo
+*~
