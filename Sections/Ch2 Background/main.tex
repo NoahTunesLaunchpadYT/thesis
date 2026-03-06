@@ -1,4 +1,9 @@
 \chapter{Background}
+
+While radar systems do provide advantages over optical and infrared sensors for detecting airborne targets, several challenges hinder widespread adoption by smaller UAVs.
+
+There are two main adverse effects of radar receivers that are sized for small to medium UAVs. The first is low received power, which is proportional to the effective receive aperture area. Antenna gain \(G\) scales with effective aperture \(A_e\) as \(G \propto A_e\). All else equal, reduced gain lowers received power and therefore reduces SNR, with \(\mathrm{SNR} \propto G^1\), decreasing the sensitivity of the system to small or far away targets. The second adverse effect is poor angular resolution. Beamwidth \(\theta_{\mathrm{BW}}\) scales as \(\theta_{\mathrm{BW}} \propto 1/D\), where \(D\) is the effective aperture diameter. With a small radar system and thus a small effective diameter, beamwidth is large and resolution is poor. Therefore, it becomes more difficult to resolve the velocity and positions of single targets, differentiate between multiple targets, identify their size, and have confidence in detections. 
+
 \input{Sections/Ch2 Background/Aviation Policy.tex}
 \input{Sections/Ch2 Background/Monopulse Radar Hardware.tex}
 \input{Sections/Ch2 Background/Radar Processing.tex}

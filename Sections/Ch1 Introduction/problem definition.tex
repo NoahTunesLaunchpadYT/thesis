@@ -1,9 +1,16 @@
 \section{Problem Definition}
+Small-UAV radar systems often face two coupled technical difficulties when compared to larger radar systems: reduced signal-to-noise ratio (SNR), which weakens sensitivity to small or distant targets, and reduced angular resolution, which makes it harder to separate, localise, and confidently track targets in cluttered or multi-target scenarios. While recent technological developments in compact radar hardware and light edge computing have made such radar systems feasible, it is clear from the discussion above that there is no clear systems level consensus for the most suitable software system design for the unique SWaP constraints of small UAVs. 
 
-While radar systems do provide advantages over optical and infrared sensors for detecting airborne targets, several challenges hinder widespread adoption by smaller UAVs.
+This thesis addresses that gap by defining the problem as one of \emph{hardware-aware radar pipeline design for UAV detect-and-avoid}. Specifically, the problem is to determine how a software-defined radar tracking pipeline for a small monopulse radar should be structured and implemented so that it can reliably detect and track faint aerial targets on UAV-compatible hardware. This includes identifying suitable combinations of front-end signal processing, detection logic, angle estimation, data association, and tracking filters, while also accounting for the computational effects of GPU acceleration, host--device data movement, synchronisation overhead, and differing embedded memory architectures. In this thesis, success is defined by the joint ability of a pipeline to maintain target sensitivity and track quality while meeting practical embedded performance requirements.
 
-\todo{List the largest barriers. What we will try and solve. Include SWaP-C constraints as one of those challenges. The complexity of these systems is itself a barrier to widespread adoption and through demonstrating the design of such a system and its capabilities, we lower this barrier for other engineers.}
+% \todo{Why does it matter}
+% \todo{What exactly is missing or unresolved}
+% \todo{What will the tesis specifically address}
 
-\todo{The field lacks a replicatable model for building and testing small radar DAA systems.}
 
-\todo{Figure out how the problem definition differs from the motivation.}
+
+% \todo{List the largest barriers. What we will try and solve. Include SWaP-C constraints as one of those challenges. The complexity of these systems is itself a barrier to widespread adoption and through demonstrating the design of such a system and its capabilities, we lower this barrier for other engineers.}
+
+% \todo{The field lacks a replicatable model for building and testing small radar DAA systems.}
+
+% \todo{Figure out how the problem definition differs from the motivation.}
